@@ -137,7 +137,7 @@
     transition: opacity 1.5s ease;
     transform: translate(-50%, -50%);
     color: #ff3399;
-    width: 700px;
+    width: 400px;
     font-size: 35px;
     z-index: 11;
 }
