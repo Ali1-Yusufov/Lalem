@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="yapraklar">
+            <div class="yaprak1"></div>
+            <div class="yaprak2"></div>
+            <div class="yaprak3"></div>
+        </div>
+        <div class="saplar">
+            <div class="sap1"></div>
+        </div>
+        <div class="yesilyapraklar">
+            <div class="yesilyaprak1"></div>
+        </div>
+        <p id="yazi">Seni Seviyorum</p>
+    </div>
+    <script>
+        document.addEventListener("click", function (e) {
+        var yazi = document.getElementById("yazi");
+
+        yazi.classList.remove("gorunur");
+
+        yazi.style.position = "absolute";
+        yazi.style.left = e.clientX + "px";
+        yazi.style.top = e.clientY + "px";
+
+        yazi.offsetWidth;
+
+        yazi.classList.add("gorunur");
+        });
+    </script>
+</body>
+</html>
